@@ -9,8 +9,6 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
@@ -55,7 +53,7 @@ public class MovieListActivity extends AppCompatActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
 
-                try {
+                /*try {
                     JSONObject images = response.getJSONObject("images");
                     //get image base url
                     imageBaseUrl = images.getString("secure_base_url");
@@ -64,7 +62,7 @@ public class MovieListActivity extends AppCompatActivity {
                     posterSize = posterSizeOptions.optString(3, "w342");
                 } catch(JSONException e) {
                     logError("Failed parsing configuration", e, true);
-                }
+                }*/
             }
 
             @Override
